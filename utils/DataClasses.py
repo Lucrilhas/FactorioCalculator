@@ -1,15 +1,14 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Set
 
 @dataclass
-class item_quant:
+class ItemQuant:
     item: str
     quant: int
 
-
 @dataclass
 class Recipe:
-    input: List[item_quant] = None
-    output: List[item_quant] = None
+    input: List[ItemQuant] = field(default_factory=list)
+    output: List[ItemQuant] = field(default_factory=list)
     tempo: int = 0
-    feito_em: Set[str] = None
+    feito_em: Set[str] = field(default_factory=set)
