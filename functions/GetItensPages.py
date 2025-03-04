@@ -19,7 +19,7 @@ def download_page(url, output_path):
         return False  # Indicate failure
     return True
 
-def GetAllItens(base_path, materials_receipes_url, output_dir):
+def get_all_itens(base_path, materials_receipes_url, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     response = requests.get(base_path + materials_receipes_url)
     response.raise_for_status()
