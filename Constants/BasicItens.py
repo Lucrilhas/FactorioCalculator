@@ -1,0 +1,15 @@
+basic_itens = (
+    "Iron_ore",
+    "Copper_ore",
+    "Stone",
+    "Coal",
+    "Crude_oil",
+    "Water",
+    "Uranium_ore",
+    "Scrap",
+    "Molten_iron",
+    "Molten_copper",
+    "Steel_plate",
+    "Iron_plate",
+    "Copper_plate",
+)
